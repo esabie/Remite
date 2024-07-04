@@ -16,8 +16,6 @@
           <a href="/">RemitE</a>
         </h1>
         <nav class="space-x-4">
-         <!-- <a href="login.html" class="text-white hover:underline">Login</a>
-          <a href="register.html" class="text-white hover:underline">Register</a> -->
           <a
             href="register.php"
             class="bg-whites hover:bg-yellow-600 text-black px-4 py-2 rounded hover:shadow-md transition duration-300"
