@@ -11,7 +11,7 @@ function fetchExchangeRates() {
         }
 
         // Fetch exchange rates from the API
-        $url = 'https://rates.myzeepay.com/api/rates/1/GBP/GHS/04-07-2024';
+        $url = 'https://rates.myzeepay.com/api/rates/1/GBP/GHS/24-05-29';
         $response = file_get_contents($url);
 
         // Log the raw response (for debugging purposes)
