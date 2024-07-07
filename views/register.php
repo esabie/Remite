@@ -12,37 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>RemitE</title>
 
-    <style>
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: white;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border-radius: 0.25rem;
-            border: 1px solid #d1d5db;
-            /* border-gray-300 */
-        }
-
-        .form-group button {
-            background-color: black;
-            /* bg-blue-500 */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 0.375rem;
-            cursor: pointer;
-        }
-
-        .form-group button:hover {
-            background-color: #1d4ed8;
-            /* hover:bg-blue-600 */
-        }
-    </style>
+   
 </head>
 
 <body class="bg-gray-100">
@@ -108,6 +78,10 @@
         <div class="bg-gray-custom p-8 rounded-lg shadow-md w-full md:w-600 mx-6">
             <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div class="form-group">
+                    <label for="sendAmount">Currency Pair:</label>
+                    <input type="text" id="currencyPair" name="sendAmount" class="text-black" readonly value="<?php echo htmlspecialchars('GBP / GHS'); ?>">
+                </div>
+                <div class="form-group">
                     <label for="sendAmount">Send Amount:</label>
                     <input type="text" id="sendAmount" name="sendAmount" class="text-black" required value="<?php echo htmlspecialchars($sendAmount ?? ''); ?>">
                 </div>
@@ -123,5 +97,11 @@
     <!-- Bottom Banner -->
 
 </body>
+
+
+
+
+<!-- class="signup relative bg-cover bg-center bg-no-repeat h-72 flex items-center" -->
+
 
 </html>
