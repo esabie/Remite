@@ -143,6 +143,10 @@ small {
   font-size: 80%;
 }
 
+smalls {
+  font-size: 85%;
+}
+
 /*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
@@ -589,6 +593,7 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto;
 }
 
 .my-3 {
@@ -858,6 +863,10 @@ video {
   text-align: center;
 }
 
+.text-muted {
+  color: #777777;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 3.25rem;
@@ -992,6 +1001,10 @@ video {
   height: 100vh;
 }
 
+.logo {
+  background-image: url('../images/Sign-up.png');
+}
+
 .showcase1 {
   background-color: rgb(255 0 0 var(--tw-bg-opacity));
   /* background-color: transparent; */
@@ -1096,6 +1109,10 @@ video {
   .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:w-350 {
+    width: 350px;
   }
 
   .md\:w-500 {
