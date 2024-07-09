@@ -24,21 +24,17 @@
             <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div class="form-group">
                 <div class="logo" ></div>
-                <h6 class="text-center">Create an Account. It's free!</h6>
-                <h1 class="text-center text-muted smalls">Already have an account?
-                    <a href="login.php"> Login</a>
+                <h6 class="text-center">Login to your account</h6>
+                <h1 class="text-center text-muted smalls">Don't have an account?
+                    <a href="home.php"> Here</a>
                 </h1>
+                    <input type="text" name="phone" class="text-black" placeholder="Phone number" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="fname" class="text-black" placeholder="First name" required>
-                    <input type="text" name="lname" class="text-black" placeholder="Last name" required>
-                    <input type="text" name="phone" class="text-black" placeholder="Phone number" required>
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
                     <input type="text" name="psw" class="text-black" placeholder="Password" required>
 
                 </div>
-                <button type="submit" class="submit-button">Continue
+                <button type="submit" class="submit-button">Log in
                 <i class="fa-solid fa-lock"></i>
                 </button>
             </form>
