@@ -9,56 +9,56 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles.css" />
     <title>RemitE</title>
 
-   
+
 </head>
 
 <body class="bg-gray-100">
 
     <?php
-    // PHP logic for fetching rates and processing form submission
-    $equivalent = "";
-    if (isset($_GET['convert'])) {
-        if (!empty($_GET['sendAmount'])) {
-            $sendAmount = $_GET['sendAmount'];
+// PHP logic for fetching rates and processing form submission
+$equivalent = "";
+if (isset($_GET['convert'])) {
+    if (!empty($_GET['sendAmount'])) {
+        $sendAmount = $_GET['sendAmount'];
 
-            // Fetch exchange rates from the API
-            $url = 'https://rates.myzeepay.com/api/rates/1/GBP/GHS/05-07-24';
+        // Fetch exchange rates from the API
+        $url = 'https://rates.myzeepay.com/api/rates/1/GBP/GHS/05-07-24';
 
-            // Initialize cURL session
-            $curl = curl_init($url);
+        // Initialize cURL session
+        $curl = curl_init($url);
 
-            // Set the CURLOPT_RETURNTRANSFER option to true to return the result as a string
-            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        // Set the CURLOPT_RETURNTRANSFER option to true to return the result as a string
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
-            // Execute the GET request
-            $response = curl_exec($curl);
+        // Execute the GET request
+        $response = curl_exec($curl);
 
-            // Close the cURL session
-            curl_close($curl);
+        // Close the cURL session
+        curl_close($curl);
 
-            // Check if response is successful
-            if ($response) {
-                $data = json_decode($response, true);
-                
-                // Check if the expected data structure is present
-                if (isset($data['rates']['rate'])) {
-                    $rate = $data['rates']['rate'];
-                    $equivalent = $sendAmount * $rate;
-                    echo $equivalent;
-                } else {
-                    echo '<p>Error: Failed to fetch exchange rates.</p>';
-                }
+        // Check if response is successful
+        if ($response) {
+            $data = json_decode($response, true);
+
+            // Check if the expected data structure is present
+            if (isset($data['rates']['rate'])) {
+                $rate = $data['rates']['rate'];
+                $equivalent = $sendAmount * $rate;
+                //echo $equivalent;
             } else {
                 echo '<p>Error: Failed to fetch exchange rates.</p>';
             }
         } else {
-            echo '<p>Error: Amount is required.</p>';
+            echo '<p>Error: Failed to fetch exchange rates.</p>';
         }
+    } else {
+        echo '<p>Error: Amount is required.</p>';
     }
-    ?>
+}
+?>
 
     <!-- Header -->
     <header class="bg-red-900 text-white p-4">
@@ -67,8 +67,8 @@
                 <a href="home.php">RemitE</a>
             </h1>
             <nav class="space-x-4">
-                <a href="login.html" class="text-white hover:underline">Login</a>
-                <a href="register.html" class="text-white hover:underline">Register</a>
+                <a href="login.php" class="text-white hover:underline">Login</a>
+                <a href="signup.php" class="text-white hover:underline">Register</a>
             </nav>
         </div>
     </header>

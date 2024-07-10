@@ -2,21 +2,21 @@
 
 require '../helpers.php';
 
-require basePath('/views/signup.php');
+require basePath('public/views/home.php');
 
 $routes = [
     '/' => 'home.php',
     '/register.php' => 'views/register.php',
 ];
 
-$uri = $_SERVER['REQUEST_URI'];
+// $uri = $_SERVER['REQUEST_URI'];
 
-if ($uri == '/') {
+// if ($uri == '/') {
 
-    require 'views/home.php';
+//     require 'views/home.php';
 
-} else if ($uri == '/register.php') {
+// } else if ($uri == '/register.php') {
 
-    require 'views/register.php';
+//     require 'views/register.php';
 
-}
+// }
