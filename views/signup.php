@@ -30,12 +30,12 @@
                 </h1>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="fname" class="text-black" placeholder="First name" required>
-                    <input type="text" name="lname" class="text-black" placeholder="Last name" required>
+                    <input type="text" name="name" class="text-black" placeholder="First name" required>
+                    <input type="text" name="name" class="text-black" placeholder="Last name" required>
+                    <input type="email" name="email" class="text-black" placeholder="Email Address" required>
                     <input type="text" name="phone" class="text-black" placeholder="Phone number" required>
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
+                    <input type="password" name="psw" class="text-black" placeholder="Password" required>
+                    <input type="password" name="psw" class="text-black" placeholder="Confirm Password" required>
 
                 </div>
                 <button type="submit" class="submit-button">Continue

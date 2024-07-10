@@ -100,8 +100,4 @@
 
 
 
-
-<!-- class="signup relative bg-cover bg-center bg-no-repeat h-72 flex items-center" -->
-
-
 </html>
