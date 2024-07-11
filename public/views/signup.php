@@ -21,7 +21,7 @@
       <div class="container mx-auto text-center  z-10"></div>
       <div class="container mx-auto text-center z-10"></div>
         <div class="bg-white p-8 rounded-lg shadow-md md:w-350 mx-auto my-3">
-            <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+            <form id="convertForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div class="form-group">
                 <div class="logo" ></div>
                 <h6 class="text-center">Create an Account. It's free!</h6>
@@ -49,7 +49,7 @@
 </body>
 
 
-   
+
 
 
     </html>
