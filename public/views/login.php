@@ -31,7 +31,7 @@
                     <input type="text" name="phone" class="text-black" placeholder="Phone number" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="psw" class="text-black" placeholder="Password" required>
+                    <input type="password" name="psw" class="text-black" placeholder="Password" required>
 
                 </div>
                 <button type="submit" class="submit-button">Log in
