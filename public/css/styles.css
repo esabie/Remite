@@ -539,7 +539,7 @@ video {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
 }
 
 @media (min-width: 640px) {
@@ -1002,11 +1002,21 @@ video {
 }
 
 .transaction {
-  background-color: #a29f9f;
+  background-color: #f0eded;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px;
-  height: 100vh;
+  padding: 30px;
+  height: auto;
+}
+
+.col-md-6 {
+ /* -ms-flex: 0 0 50%; */
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
 }
 
 .logo {
@@ -1142,6 +1152,10 @@ video {
 
   .md\:w-600 {
     width: 600px;
+  }
+
+  .md\:w-800 {
+    width: 800px;
   }
 
   .md\:w-auto {
