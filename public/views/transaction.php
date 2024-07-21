@@ -23,47 +23,26 @@
     </header>
 
   <section
-      class="transaction text-black ">
+      class="transaction text-black h-72">
       <div class="row">
       <div class="container mx-auto text-center z-10"></div>
         <div class="bg-white p-8 rounded-lg shadow-md md:w-800 mx-auto my-3">
             <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div class="container">
-                    <h1 class="form-title text-center ">TRANSACTION<h1>
+                    <h1 class="form-title text-center h5 strong">TRANSACTION<h1>
                         <form action="#">
-                            <div class="form-group text-black">
-                                <label for = "firstName">Last Name</label>
-                                <input type="text" id="secondName" name="secondName">
-                            </div>
-                            <div class="form-group text-black">
-                                <label for = "phone"> Sender Phone Number</label>
-                                <input type="phone" id="sender_phone" name="phone" required>
-                            </div>
-                            <div class="form-group text-black">
-                                <label for = "firstName"> Receiver Phone Number</label>
-                                <input type="text" id="phone" name="phone" required>
-                            </div>
-                            <div class="form-group text-black">
-                                <label for = "firstName"> Amount</label>
-                                <input type="text" id="amount" name="amount" required>
-                            </div>
-                            <div class="form-group text-black">
-                                <label for = "firstName"> Network</label>
-                                <input type="text" id="firstName" name="firstName">
-                            </div>
-
                             <div class="row">
                                 <div class="form-group col-md-6 relative">
                                     <label for = "firstName"> Sender First Name</label>
-                                    <input type="text" id="senderfirstName" name="senderfirstName" required>
+                                    <input type="text" id="senderfirstName" name="name" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "lastName"> Sender Last Name</label>
-                                    <input type="text" id="senderlastName" name="senderlastName" required>
+                                    <input type="text" id="senderlastName" name="name" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
-                                    <label for = "firstName"> Beneficiary Phone Number</label>
-                                    <input type="phone" id="benef_phone" name="phone" required>
+                                    <label for = "senderPhone"> Sender Phone Number</label>
+                                    <input type="phone" id="senderPhoneNumber" name="phone" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "mno"> Network</label>
@@ -74,24 +53,32 @@
                                         <option value="airteltigo">AirtelTigo</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-md-12 relative">
-                                    <label for = "firstName"> Sender First Name</label>
-                                    <input type="text" id="senderfirstName" name="secondfirstName" required>
+                                <div class="form-group col-md-6 relative">
+                                    <label for = "phone"> Beneficiary Phone Number</label>
+                                    <input type="phone" id="benef_phone" name="phone" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
-                                    <label for = "firstName"> Amount</label>
-                                    <input type="text" id="amount" name="amount" required>
+                                    <label for = "amount"> Amount (GHS)</label>
+                                    <input type="number" id="amount" name="number" required>
+                                </div>
+                                <div class="form-group col-md-12 relative">
+                                    <label for = "receiverfirstName">Beneficiary Name</label>
+                                    <input type="text" id="receiverfirstName" name="receiverfirstName" required readonly>
+                                </div>
+                                <div class="form-group col-md-6 relative">
+                                    <label for = "purpose"> Purpose of Transaction</label>
+                                    <input type="text" id="purpose" name="purpose" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for = "firstName"> Colombia</label>
-                                    <input type="text" id="firstName" name="firstName">
+                                    <label for = "destination"> Destination</label>
+                                    <input type="text" id="wallet" name="wallet" placeholder="Wallet" readonly>
                                 </div>
+                        <button type="submit" class="submit-button">Send Money</button>
                             
                         </form>
 
                 </div>
                 </div>
-                <button type="submit" class="submit-button">Send Money</button>
             </form>
             </div>
         </div>

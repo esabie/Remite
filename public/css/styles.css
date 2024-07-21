@@ -1003,9 +1003,9 @@ video {
 
 .transaction {
   background-color: #f0eded;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px;
+  background-size: auto;
+  background-repeat: repeat;
+  padding: 60px;
   height: auto;
 }
 
