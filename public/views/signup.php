@@ -22,7 +22,7 @@
       <div class="container mx-auto text-center  z-10"></div>
       <div class="container mx-auto text-center z-10"></div>
         <div class="bg-white p-8 rounded-lg shadow-md md:w-350 mx-auto my-3">
-            <form id="convertForm" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+            <form id="convertForm" method="POST" action="includes/db.php">
                 <div class="form-group">
                 <div class="logo" ></div>
                 <h6 class="text-center">Create an Account. It's free!</h6>
@@ -31,8 +31,8 @@
                 </h1>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="name" class="text-black" placeholder="First name" required>
-                    <input type="text" name="name" class="text-black" placeholder="Last name" required>
+                    <input type="text" name="fname" class="text-black" placeholder="First name" required>
+                    <input type="text" name="lname" class="text-black" placeholder="Last name" required>
                     <input type="email" name="email" class="text-black" placeholder="Email Address" required>
                     <input type="text" name="phone" class="text-black" placeholder="Phone number" required>
                     <input type="password" name="psw" class="text-black" placeholder="Password" required>

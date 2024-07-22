@@ -22,11 +22,11 @@
       <div class="container mx-auto text-center  z-10"></div>
       <div class="container mx-auto text-center z-10"></div>
         <div class="bg-white p-8 rounded-lg shadow-md md:w-350 mx-auto my-3">
-            <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+            <form id="convertForm" method="POST" action="includes/db_include.php">
                 <div class="form-group">
                 <div class="logo" ></div>
                 <h6 class="text-center">Login to your account</h6>
-                <h1 class="text-center text-muted smalls">Don't have an account?
+                <h1 class="text-center text-muted">Don't have an account?
                     <a href="home.php"> Here</a>
                 </h1>
                     <input type="text" name="phone" class="text-black" placeholder="Phone number" required>

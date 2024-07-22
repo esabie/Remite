@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "senderPhone"> Sender Phone Number</label>
-                                    <input type="phone" id="senderPhoneNumber" name="phone" required>
+                                    <input type="phone" id="senderPhoneNumber" placeholder="233" name="phone" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "mno"> Network</label>
@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "phone"> Beneficiary Phone Number</label>
-                                    <input type="phone" id="benef_phone" name="phone" required>
+                                    <input type="phone" id="benef_phone" placeholder="233" name="phone" required>
                                 </div>
                                 <div class="form-group col-md-6 relative">
                                     <label for = "amount"> Amount (GHS)</label>

@@ -1009,6 +1009,10 @@ video {
   height: auto;
 }
 
+.registration {
+  background-image: url('../images/1.png');
+}
+
 .col-md-6 {
  /* -ms-flex: 0 0 50%; */
   flex: 0 0 50%;
