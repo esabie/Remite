@@ -16,7 +16,7 @@
                 <a href="home.php">RemitE</a>
             </h1>
             <nav class="space-x-4">
-                <a href="login.php" class="text-white hover:underline">Login</a>
+                <a href="login.php" class="text-white hover:underline">Logout</a>
                 <a href="signup.php" class="text-white hover:underline">Register</a>
             </nav>
         </div>

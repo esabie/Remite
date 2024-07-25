@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Start session and set user ID
             session_start();
             $_SESSION['user_id'] = $row['id'];
-            $_SESSION['email'] = $email;
+            $_SESSION['phone'] = $mobile;
             
             // Redirect to dashboard
             header("Location: ../views/transaction.php");
