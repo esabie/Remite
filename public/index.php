@@ -2,7 +2,7 @@
 
 require '../helpers.php';
 
-require basePath('public/views/transaction.php');
+require basePath('public/views/register.php');
 
 $routes = [
     '/' => 'home.php',

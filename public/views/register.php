@@ -74,7 +74,9 @@ if (isset($_GET['convert'])) {
     </header>
 
     <section class="bg-red-900 text-black p-4 h-72 flex items-center">
-        <div class="container mx-auto text-center z-10"></div>
+        <div class="container mx-auto text-center z-10">
+            <img src="/images/1.png" class="h-1"/>
+        </div>
         <div class="bg-gray-custom p-8 rounded-lg shadow-md w-full md:w-600 mx-6">
             <form id="convertForm" method="GET" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <div class="form-group">
