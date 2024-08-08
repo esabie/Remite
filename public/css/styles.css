@@ -590,6 +590,11 @@ video {
   align-content: center;
 }
 
+.h-1 {
+  height: 800px;
+  width: 900px;
+}
+
 .h-20 {
   height: 10rem;
 }

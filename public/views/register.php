@@ -25,7 +25,7 @@ if (isset($_GET['convert'])) {
         $sendAmount = $_GET['sendAmount'];
 
         // Fetch exchange rates from the API
-        $url = 'https://rates.myzeepay.com/api/rates/1/GBP/GHS/05-07-24';
+        $url = 'https://rates.myzeepay.com/api/rates/7/GBP/GHS/05-07-24';
 
         // Initialize cURL session
         $curl = curl_init($url);
