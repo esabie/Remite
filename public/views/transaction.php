@@ -47,7 +47,7 @@ if (isset($_GET['validate-button'])) {
             CURLOPT_POSTFIELDS => $postData,
             CURLOPT_HTTPHEADER => array(
                 'Content-Type: application/json',
-                'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJmYmVhMGM2NDY5NmIxMzI0ZTZlYmQ4NzZjNTVkYzhlYmI1MTk2Mjc2NzVhNWJjNzc1ZjkxOThlYjcyNmJlMzc1ZDQxZDg4M2ViMzRhZTQwIn0.eyJhdWQiOiI4NiIsImp0aSI6ImJmYmVhMGM2NDY5NmIxMzI0ZTZlYmQ4NzZjNTVkYzhlYmI1MTk2Mjc2NzVhNWJjNzc1ZjkxOThlYjcyNmJlMzc1ZDQxZDg4M2ViMzRhZTQwIiwiaWF0IjoxNzIwMDkzMjAzLCJuYmYiOjE3MjAwOTMyMDMsImV4cCI6MTc1MTYyOTIwMywic3ViIjoiMTQxIiwic2NvcGVzIjpbXX0.dtvN0oXNeagkEFcZd1rE8YrbDCDPtVpiXt0qhWDm1KHcww8Ck2USxTBdJL-kqd21RN5AEozUWVuP0KDTl8_maovDyJTk8wANf5M2kWhjiiWC19wnrNQCzZ4Zs6MnqZnJnefTMeP5gMvhoEdCRp2jSYn4FAfrr7fVDSfnbpUp9WgESFtBYTTCQ5_GGxNtQd4fZQj-na2oRg_36R1HO7P0PZGlNcMU7Nep3w5raFZ_Kg304ocBeMaBT5nGK_V20JlGQ-MmFsl6FKeP3i1x5zDtc6isD2YeX8EHt7C5HmsTJdcRrAA_NK7Msty72n9IzguNuVtBNML_ihQVG8vrXS4uWSSz0ziHyyur_ETv1TqC4nT_oC4jCnPvB-w_D6T5HjNFp0KqL2c1lIzRHWEJRRv8fQ8ieuJCxAVdE2KhNepUsM6DcTLBJMh-z_59JCSJ_K500CIOEEHVjPvbm_2OAzVs7Q0QFQzuxZkaEKyAwmYIy4Wx72J_3sSeKP2Y6PHIFwSOlnYy3sruXKNvu3zRiBPKHpDf3LAsl2glCl4G93dCNrcRQQ4aS7b3RTyqEAgVBLRWYfdjFwQnqgEd5IdjS1LxleGlc3cG3CNOyX1iYF-xh-EZNmfuunL88mRsYj0EuRHoVYJkGINv20huBs_syrBSr_QBU96eSc78KJKpoGS17CA',
+                'Authorization: Bearer ',
             ),
         ));
 
