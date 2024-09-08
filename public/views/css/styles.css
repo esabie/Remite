@@ -604,7 +604,7 @@ video {
 }
 
 .h-72 {
-  height: 50rem;
+  height: 100rem;
 }
 
 .w-full {
@@ -1056,7 +1056,7 @@ video {
 }
 
 .submit-button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: #0b5269;
   color: white;
@@ -1066,6 +1066,17 @@ video {
 }
 .submit-button:hover {
   background-color: #0056b3;
+}
+
+.validate-button {
+  width: 15%;
+  padding: 10px;
+  height: auto;
+  background-color: #0b5269;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
